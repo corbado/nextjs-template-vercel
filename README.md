@@ -1,1 +1,0 @@
-# next.js-template-vercel
