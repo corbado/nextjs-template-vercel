@@ -33,8 +33,8 @@ export default function LangdingPage() {
         </h2>
       </div>
       <Link
-        href=""
-        className="rounded-full bg-blue-500 px-5 py-3 text-lg font-bold text-white hover:bg-blue-700"
+        href="https://github.com/corbado/next.js-template-vercel"
+        className="rounded-xl bg-blue-500 px-5 py-3 text-lg font-bold text-white hover:bg-blue-700"
       >
         Check out the code sample
       </Link>

@@ -29,7 +29,7 @@ export default async function Navbar() {
             <li>
               <Link
                 href="/profile"
-                className="rounded-full bg-blue-700 px-4 py-2 text-lg text-white hover:bg-blue-500"
+                className="rounded-xl bg-blue-700 px-4 py-2 text-lg text-white hover:bg-blue-500"
               >
                 Profile
               </Link>
@@ -41,7 +41,7 @@ export default async function Navbar() {
             <li>
               <Link
                 href="/login"
-                className="rounded-full border border-2 border-blue-700 px-4 py-2 text-lg text-blue-700 hover:border-blue-500 hover:text-blue-500"
+                className="rounded-xl border border-2 border-blue-700 px-4 py-2 text-lg text-blue-700 hover:border-blue-500 hover:text-blue-500"
               >
                 Login
               </Link>
@@ -49,7 +49,7 @@ export default async function Navbar() {
             <li>
               <Link
                 href="/signup"
-                className="rounded-full border border-2 border-blue-700 bg-blue-700 px-4 py-2 text-lg text-white hover:border-blue-500 hover:bg-blue-500"
+                className="rounded-xl border border-2 border-blue-700 bg-blue-700 px-4 py-2 text-lg text-white hover:border-blue-500 hover:bg-blue-500"
               >
                 Signup
               </Link>
