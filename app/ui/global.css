@@ -20,3 +20,20 @@ input[type="number"]::-webkit-outer-spin-button {
 #landingPageContainer {
   background: linear-gradient(111deg, #0b0d1d 0%, #0b1948 55%, #0e1837 100%);
 }
+
+#sub-tagline {
+  font-size: 24px;
+  font-family: "Inter";
+}
+
+#tagline {
+  font-size: 48px;
+  font-family: "Inter";
+}
+
+.buttons {
+  border-radius: 1.5rem;
+  color: white;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-family: "Space Grotesk";
+}
