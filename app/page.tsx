@@ -38,6 +38,13 @@ export default function LangdingPage() {
       >
         Check the code
       </Link>
+      <Image
+        src="/Security.svg"
+        className="absolute bottom-[7%] right-0 hidden md:block"
+        alt="Security icon"
+        width={400}
+        height={400}
+      />
       <div className="relative mt-auto w-full bg-gray-800 text-white">
         <Image
           src="/Logo-bottom.svg"
