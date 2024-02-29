@@ -14,5 +14,10 @@ export default function SignupForm() {
     router.push("/login");
   };
 
-  return <SignUp onSignedUp={onSignedUp} navigateToLogin={navigateToLogin} />;
+  return (
+    <div className="shadow-effect my-8">
+      {" "}
+      <SignUp onSignedUp={onSignedUp} navigateToLogin={navigateToLogin} />{" "}
+    </div>
+  );
 }

@@ -3,10 +3,7 @@ import Link from "next/link";
 
 export default function LangdingPage() {
   return (
-    <div
-      className="relative z-0 flex min-h-screen flex-col items-center justify-center gap-8 text-center"
-      id="landingPageContainer"
-    >
+    <div className="landingPageContainer relative z-0 flex min-h-screen flex-col items-center justify-center gap-8 text-center">
       <Image
         src="/fingerprint-icon1.svg"
         className="custom-bg-image absolute bottom-[25%] left-0"
