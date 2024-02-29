@@ -20,8 +20,13 @@ export default async function Navbar() {
 
   return (
     <nav className="fixed left-0 top-0 z-10 flex h-20 w-screen items-center px-5">
-      <Link className="mr-auto text-3xl font-bold" href="/">
-        Corbado
+      <Link className="font-space-grotesk mr-auto text-3xl font-bold" href="/">
+        <Image
+          src="/Logo-Light.svg"
+          alt="Corbado Logo"
+          width={200}
+          height={200}
+        />
       </Link>
       <ul className="flex items-center gap-x-3">
         {authenticated && (
@@ -41,7 +46,8 @@ export default async function Navbar() {
             <li>
               <Link
                 href="/login"
-                className="rounded-xl border border-2 border-blue-700 px-4 py-2 text-lg text-blue-700 hover:border-blue-500 hover:text-blue-500"
+                style={{ borderRadius: "1.5rem" }}
+                className="rounded-xl border border-blue-700 px-8 py-2 text-lg text-blue-700 hover:border-blue-500 hover:text-blue-500"
               >
                 Login
               </Link>
@@ -49,9 +55,10 @@ export default async function Navbar() {
             <li>
               <Link
                 href="/signup"
-                className="rounded-xl border border-2 border-blue-700 bg-blue-700 px-4 py-2 text-lg text-white hover:border-blue-500 hover:bg-blue-500"
+                style={{ borderRadius: "1.5rem" }}
+                className="rounded-xl border border-blue-700 bg-blue-700 px-8 py-2 text-lg text-white hover:border-blue-500 hover:bg-blue-500"
               >
-                Signup
+                Sign up for free
               </Link>
             </li>
           </>
