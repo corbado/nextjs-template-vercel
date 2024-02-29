@@ -16,6 +16,7 @@ export default function LangdingPage() {
       />
       <div className="mt-auto">
         <Image
+          className="custom-main-image"
           src="/user-with-passkey.svg"
           alt="passkey icon"
           width={250}
@@ -23,11 +24,11 @@ export default function LangdingPage() {
         />
       </div>
       <div>
-        <p className="text-lg text-white" id="sub-tagline">
+        <p className="custom-font text-white" id="sub-tagline">
           Let your users log in with Face ID, Touch ID or Windows Hello via
           <Image
             src="/face-touchID-icon.svg"
-            className="absolute bottom-[40%] right-[15%]"
+            className="custom-bg-image absolute bottom-[40%] right-[15%]"
             alt="face icon"
             width={250}
             height={250}
@@ -48,7 +49,7 @@ export default function LangdingPage() {
 
       <Image
         src="/Security.svg"
-        className="absolute bottom-[7%] right-0 "
+        className="custom-bg-image absolute bottom-[7%] right-0 "
         alt="Security icon"
         width={400}
         height={400}
@@ -59,7 +60,7 @@ export default function LangdingPage() {
           alt="Corbado logo"
           width={150}
           height={150}
-          className="absolute left-[5%] top-[-75px]"
+          className="custom-image absolute left-[5%] top-[-75px]"
         />
         <h2 className="custom-bottom">Explore more features</h2>
       </div>

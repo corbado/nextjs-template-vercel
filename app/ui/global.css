@@ -22,7 +22,6 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 #sub-tagline {
-  font-size: 24px;
   font-family: "Inter";
 }
 
@@ -46,6 +45,21 @@ input[type="number"]::-webkit-outer-spin-button {
   .custom-font {
     font-size: 14px;
   }
+  .custom-image {
+    width: 100px;
+    height: 100px;
+  }
+  .custom-bg-image {
+    width: 40%;
+    height: 40%;
+  }
+  .custom-main-image {
+    width: 100px;
+    height: 100px;
+  }
+  p .custom-font {
+    font-size: 12px;
+  }
 }
 
 .custom-bottom {
@@ -54,4 +68,8 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: #171b2a;
   line-height: 2rem;
   font-size: 1.7rem;
+}
+
+p {
+  font-size: 24px;
 }
