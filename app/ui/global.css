@@ -38,6 +38,16 @@ input[type="number"]::-webkit-outer-spin-button {
   font-family: "Space Grotesk";
 }
 
+@media screen and (max-width: 768px) {
+  .buttons {
+    width: 50%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  .custom-font {
+    font-size: 14px;
+  }
+}
+
 .custom-bottom {
   padding: 3rem;
   font-weight: 500;

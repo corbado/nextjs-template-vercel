@@ -8,8 +8,8 @@ export default function LangdingPage() {
       id="landingPageContainer"
     >
       <Image
-        src="/fingerprint-icon.svg"
-        className="absolute left-0 top-[15%] hidden md:block"
+        src="/fingerprint-icon1.svg"
+        className="absolute bottom-[25%] left-0"
         alt="Fingerprint icon"
         width={200}
         height={200}
@@ -25,6 +25,13 @@ export default function LangdingPage() {
       <div>
         <p className="text-lg text-white" id="sub-tagline">
           Let your users log in with Face ID, Touch ID or Windows Hello via
+          <Image
+            src="/face-touchID-icon.svg"
+            className="absolute bottom-[40%] right-[15%]"
+            alt="face icon"
+            width={250}
+            height={250}
+          />
         </p>
         <br></br>
         <h2 className="mt-2 text-3xl font-bold text-white" id="tagline">
@@ -34,13 +41,14 @@ export default function LangdingPage() {
       <br></br>
       <Link
         href="https://github.com/corbado/next.js-template-vercel"
-        className="buttons bg-blue-700 text-lg font-medium hover:bg-blue-700"
+        className="buttons custom-font bg-blue-700 text-lg font-medium hover:bg-blue-700"
       >
         Check the code
       </Link>
+
       <Image
         src="/Security.svg"
-        className="absolute bottom-[7%] right-0 hidden md:block"
+        className="absolute bottom-[7%] right-0 "
         alt="Security icon"
         width={400}
         height={400}
@@ -51,7 +59,7 @@ export default function LangdingPage() {
           alt="Corbado logo"
           width={150}
           height={150}
-          className="absolute left-[5%] top-[-75px] hidden md:block"
+          className="absolute left-[5%] top-[-75px]"
         />
         <h2 className="custom-bottom">Explore more features</h2>
       </div>

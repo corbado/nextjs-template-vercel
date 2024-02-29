@@ -34,7 +34,7 @@ export default async function Navbar() {
             <li>
               <Link
                 href="/profile"
-                className="buttons bg-blue-700 px-4 py-2 text-lg hover:bg-blue-500"
+                className="buttons custom-font bg-blue-700 px-4 py-2 text-lg hover:bg-blue-500"
               >
                 Profile
               </Link>
@@ -46,7 +46,7 @@ export default async function Navbar() {
             <li>
               <Link
                 href="/login"
-                className="buttons hover:text-white-500 border border-white text-lg hover:border-blue-500"
+                className="buttons custom-font hover:text-white-500 border border-white text-lg hover:border-blue-500"
               >
                 Login
               </Link>
@@ -54,7 +54,7 @@ export default async function Navbar() {
             <li>
               <Link
                 href="/signup"
-                className="buttons border border-blue-700 bg-blue-700 text-lg hover:border-blue-500 hover:bg-blue-500"
+                className="buttons custom-font border border-blue-700 bg-blue-700 text-lg hover:border-blue-500 hover:bg-blue-500"
               >
                 Sign up for free
               </Link>
