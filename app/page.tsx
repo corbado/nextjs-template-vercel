@@ -9,7 +9,7 @@ export default function LangdingPage() {
     >
       <Image
         src="/fingerprint-icon1.svg"
-        className="absolute bottom-[25%] left-0"
+        className="custom-bg-image absolute bottom-[25%] left-0"
         alt="Fingerprint icon"
         width={200}
         height={200}
@@ -23,26 +23,30 @@ export default function LangdingPage() {
           height={250}
         />
       </div>
-      <div>
-        <p className="custom-font text-white" id="sub-tagline">
-          Let your users log in with Face ID, Touch ID or Windows Hello via
+      <div className="flex items-center">
+        <div>
+          <p className="custom-font text-white" id="sub-tagline">
+            Let your users log in with Face ID, Touch ID or Windows Hello via
+          </p>
+          <br></br>
+          <h2 className="mt-2 text-3xl font-bold text-white" id="tagline">
+            Passkeys
+          </h2>
+        </div>
+        <div className="ml-auto">
           <Image
             src="/face-touchID-icon.svg"
-            className="custom-bg-image absolute bottom-[40%] right-[15%]"
+            className="custom-bg-image absolute bottom-[43%] right-[10%] hidden md:block"
             alt="face icon"
-            width={250}
-            height={250}
+            width={200}
+            height={200}
           />
-        </p>
-        <br></br>
-        <h2 className="mt-2 text-3xl font-bold text-white" id="tagline">
-          Passkeys
-        </h2>
+        </div>
       </div>
       <br></br>
       <Link
         href="https://github.com/corbado/next.js-template-vercel"
-        className="buttons custom-font bg-blue-700 text-lg font-medium hover:bg-blue-700"
+        className="buttons custom-font bg-blue-700 text-lg font-medium hover:border-blue-500 hover:bg-blue-500"
       >
         Check the code
       </Link>

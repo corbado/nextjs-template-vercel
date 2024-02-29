@@ -26,6 +26,7 @@ export default async function Navbar() {
           alt="Corbado Logo"
           width={200}
           height={200}
+          className="custom-logo"
         />
       </Link>
       <ul className="flex items-center gap-x-3">
@@ -46,7 +47,7 @@ export default async function Navbar() {
             <li>
               <Link
                 href="/login"
-                className="buttons custom-font hover:text-white-500 border border-white text-lg hover:border-blue-500"
+                className="buttons custom-font border border-white text-lg hover:border-blue-500 hover:text-blue-500"
               >
                 Login
               </Link>
