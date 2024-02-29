@@ -16,10 +16,10 @@ export default function LangdingPage() {
       />
       <div className="mt-auto">
         <Image
-          src="/passkey-icon.svg"
+          src="/user-with-passkey.svg"
           alt="passkey icon"
-          width={100}
-          height={100}
+          width={250}
+          height={250}
         />
       </div>
       <div>
@@ -40,13 +40,13 @@ export default function LangdingPage() {
       </Link>
       <div className="relative mt-auto w-full bg-gray-800 text-white">
         <Image
-          src="/corbado-logo.svg"
+          src="/Logo-bottom.svg"
           alt="Corbado logo"
           width={150}
           height={150}
-          className="absolute left-[10%] top-[-75px] hidden md:block"
+          className="absolute left-[5%] top-[-75px] hidden md:block"
         />
-        <h2 className="p-12 text-2xl font-bold">Explore more features</h2>
+        <h2 className="custom-bottom">Explore more features</h2>
       </div>
     </div>
   );
