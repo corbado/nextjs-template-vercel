@@ -34,6 +34,7 @@ export default async function Navbar() {
             <li>
               <Link
                 href="/profile"
+                style={{ borderRadius: "1.5rem" }}
                 className="rounded-xl bg-blue-700 px-4 py-2 text-lg text-white hover:bg-blue-500"
               >
                 Profile
@@ -47,7 +48,7 @@ export default async function Navbar() {
               <Link
                 href="/login"
                 style={{ borderRadius: "1.5rem" }}
-                className="rounded-xl border border-blue-700 px-8 py-2 text-lg text-blue-700 hover:border-blue-500 hover:text-blue-500"
+                className="hover:text-white-500 rounded-xl border border-white px-8 py-2 text-lg text-white hover:border-blue-500"
               >
                 Login
               </Link>
