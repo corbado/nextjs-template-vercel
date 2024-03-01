@@ -8,6 +8,7 @@ export default async function Navbar() {
   const sdk = createNodeSDK();
   const session = cookieStore.get("cbo_short_session");
   let authenticated: boolean;
+  
   try {
     const currentSessionUser = await sdk
       .sessions()
