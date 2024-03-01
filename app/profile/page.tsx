@@ -34,37 +34,53 @@ async function CurrentUser() {
 
   return (
     <>
-      <h1
-        className="text-center text-2xl font-bold"
-        style={{ color: "#6EA9F8" }}
-      >
-        Hi {user.fullName},
-      </h1>
+      <h1 className="text-2xl font-bold text-white">Hi {user.fullName},</h1>
       <br></br>
-      <p className="text-center" style={{ color: "#6EA9F8" }}>
-        These are your user details:
-      </p>
+      <p style={{ color: "gray", fontSize: "16px" }}>user details:</p>
+      <hr className="mt-2"></hr>
       <div
-        className="mt-8 rounded-md bg-blue-500 p-6"
-        style={{ backgroundColor: "#0C1A48" }}
+        className="rounded-md bg-blue-500 p-6"
+        style={{ backgroundColor: "transparent" }}
       >
-        <div className="mt-3">
-          <ul className="mt-3 space-y-2">
+        <div>
+          <ul className="mt-2 space-y-4">
             <li className="flex items-center text-white">
-              <EnvelopeIcon className="mr-2 w-6" /> Email:{" "}
-              {activeEmail
-                ? `${activeEmail?.email} created at ${activeEmail?.created}`
-                : "No active email"}
+              <UserCircleIcon className="mr-2 w-6" />
+              <span className="font-semibold">Name:</span>{" "}
+              <span className="custom-bg">{user.fullName}</span>
             </li>
             <li className="flex items-center text-white">
-              <UserCircleIcon className="mr-2 w-6" /> Name: {user.fullName}
+              <EnvelopeIcon className="mr-2 w-6" />
+              <span className="font-semibold"> Email:</span>
+              <span className="custom-bg ">
+                {" "}
+                {activeEmail ? activeEmail?.email : "No active email"}
+              </span>
             </li>
+            <li className="ml-8 flex items-center text-white">
+              <span className="font-semibold">Created at: </span>
+              <span className="custom-bg">
+                {" "}
+                {activeEmail ? `${activeEmail?.created}` : "-"}
+              </span>
+            </li>
+
             <li className="flex items-center text-white">
-              <PhoneIcon className="mr-2 w-6" /> Phone Number:{" "}
-              {activePhone?.phoneNumber
-                ? `${activePhone?.phoneNumber} created at ${activePhone?.created}`
-                : "No active phone number"}
-              {activePhone?.created}
+              <PhoneIcon className="mr-2 w-6" />{" "}
+              <span className="font-semibold">Phone Number:</span>
+              <span className="custom-bg">
+                {" "}
+                {activePhone
+                  ? activePhone?.phoneNumber
+                  : "No active phone number"}
+              </span>
+            </li>
+            <li className="ml-8 flex items-center text-white">
+              <span className="font-semibold">Created at: </span>
+              <span className="custom-bg">
+                {" "}
+                {activePhone ? `${activePhone?.created}` : "-"}
+              </span>
             </li>
             <br></br>
             <li className="flex items-center text-white">

@@ -50,6 +50,15 @@ p {
   font-size: 24px;
 }
 
+.custom-bg {
+  display: block;
+  background-color: #0c1a48;
+  width: 80%;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  margin-left: auto;
+}
+
 .shadow-effect {
   box-shadow: rgba(0, 255, 255, 0.25) 0px 25px 150px -12px;
 }
