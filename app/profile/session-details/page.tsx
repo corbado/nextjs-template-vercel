@@ -1,3 +1,5 @@
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { nord } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { jwtDecode } from "jwt-decode";
 import { cookies } from "next/headers";
 
@@ -14,15 +16,15 @@ export default function SessionDetails() {
 
   return (
     <>
-      <p className="text-center" style={{ color: "#6EA9F8" }}>
-        This is your shortSession:
-      </p>
+      <p className="text-white">This is your shortSession:</p>
       <div
         className="mt-8 rounded-md bg-blue-500 p-6"
         style={{ backgroundColor: "#0C1A48" }}
       >
-        <div className="mb-3 mt-3 text-white">
-          <pre>{serializedDecodedShortSession}</pre>
+        <div className="mb-3 mt-3">
+          <SyntaxHighlighter language="json" style={nord}>
+            {serializedDecodedShortSession}
+          </SyntaxHighlighter>
         </div>
       </div>
     </>

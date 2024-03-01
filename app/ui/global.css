@@ -49,7 +49,12 @@ body {
 p {
   font-size: 24px;
 }
-
+pre {
+  background: none !important;
+}
+code {
+  font-family: "Inter" !important;
+}
 .custom-bg {
   display: block;
   background-color: #0c1a48;
