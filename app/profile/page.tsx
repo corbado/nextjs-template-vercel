@@ -34,35 +34,49 @@ async function CurrentUser() {
 
   return (
     <>
-      <h1 className="text-2xl font-bold">Hi {user.fullName},</h1>
-      <div className="mb-3 mt-3">
-        <p>These are your user details:</p>
-        <ul className="m-3 flex flex-col gap-3">
-          <li className="flex">
-            <EnvelopeIcon className="mr-2 w-6" /> Email:{" "}
-            {activeEmail
-              ? `${activeEmail?.email} created at ${activeEmail?.created}`
-              : "No active email"}
-          </li>
-          <li className="flex">
-            <UserCircleIcon className="mr-2 w-6" /> Name: {user.fullName}
-          </li>
-          <li className="flex">
-            <PhoneIcon className="mr-2 w-6" /> Phone Number:{" "}
-            {activePhone?.phoneNumber
-              ? `${activePhone?.phoneNumber} created at ${activePhone?.created}`
-              : "No active phone number"}
-            {activePhone?.created}
-          </li>
-          <li className="flex gap-2">
-            Is Authenticated:{" "}
-            {currentSessionUser.isAuthenticated() ? (
-              <CheckCircleIcon className="w-6" />
-            ) : (
-              <XCircleIcon className="w-6" />
-            )}
-          </li>
-        </ul>
+      <h1
+        className="text-center text-2xl font-bold"
+        style={{ color: "#6EA9F8" }}
+      >
+        Hi {user.fullName},
+      </h1>
+      <br></br>
+      <p className="text-center" style={{ color: "#6EA9F8" }}>
+        These are your user details:
+      </p>
+      <div
+        className="mt-8 rounded-md bg-blue-500 p-6"
+        style={{ backgroundColor: "#0C1A48" }}
+      >
+        <div className="mt-3">
+          <ul className="mt-3 space-y-2">
+            <li className="flex items-center text-white">
+              <EnvelopeIcon className="mr-2 w-6" /> Email:{" "}
+              {activeEmail
+                ? `${activeEmail?.email} created at ${activeEmail?.created}`
+                : "No active email"}
+            </li>
+            <li className="flex items-center text-white">
+              <UserCircleIcon className="mr-2 w-6" /> Name: {user.fullName}
+            </li>
+            <li className="flex items-center text-white">
+              <PhoneIcon className="mr-2 w-6" /> Phone Number:{" "}
+              {activePhone?.phoneNumber
+                ? `${activePhone?.phoneNumber} created at ${activePhone?.created}`
+                : "No active phone number"}
+              {activePhone?.created}
+            </li>
+            <br></br>
+            <li className="flex items-center text-white">
+              Is Authenticated:{" "}
+              {currentSessionUser.isAuthenticated() ? (
+                <CheckCircleIcon className="w-8 pl-2 text-green-500" />
+              ) : (
+                <XCircleIcon className="w-8 pl-2 text-red-500" />
+              )}
+            </li>
+          </ul>
+        </div>
       </div>
     </>
   );
