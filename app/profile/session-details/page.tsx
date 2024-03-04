@@ -17,7 +17,7 @@ export default function SessionDetails() {
 
   return (
     <>
-      <h1 className="text-2xl font-bold text-white">
+      <h1 className="text-2xl font-bold text-white md:pt-24">
         The following data is available in your short-term session (represented
         as JWT):
       </h1>
