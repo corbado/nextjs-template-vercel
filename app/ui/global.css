@@ -115,6 +115,9 @@ div.cb-dialog-content {
   }
   .custom-button {
     width: 20px;
+    background-color: transparent !important;
+    border: 1px solid white;
+    border-radius: 10px;
   }
   .custom-bg {
     width: 65%;
