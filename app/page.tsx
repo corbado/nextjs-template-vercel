@@ -63,7 +63,9 @@ export default function LangdingPage() {
           height={150}
           className="custom-image absolute left-[5%] top-[-75px]"
         />
-        <h2 className="custom-bottom">Explore more features</h2>
+        <a href="https://www.corbado.com" target="_blank">
+          <h2 className="custom-bottom">Explore more features</h2>
+        </a>
       </div>
     </div>
   );
