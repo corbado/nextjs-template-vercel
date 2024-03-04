@@ -7,6 +7,7 @@ import {
   UserCircleIcon,
   EnvelopeIcon,
   PhoneIcon,
+  PencilIcon,
 } from "@heroicons/react/24/outline";
 import createNodeSDK from "@/app/utils/createNodeSDK";
 
@@ -61,16 +62,6 @@ async function CurrentUser() {
               </span>
             </li>
             <li className="flex items-center text-white">
-              <span className="pl-8 font-light" style={{ fontSize: "14px" }}>
-                Created at:{" "}
-              </span>
-              <span className="custom-bg">
-                {" "}
-                {activeEmail ? `${activeEmail?.created}` : "-"}
-              </span>
-            </li>
-
-            <li className="flex items-center text-white">
               <PhoneIcon className="mr-2 w-6" />{" "}
               <span className="font-semibold">Phone Number:</span>
               <span className="custom-bg">
@@ -78,6 +69,14 @@ async function CurrentUser() {
                 {activePhone
                   ? activePhone?.phoneNumber
                   : "No active phone number"}
+              </span>
+            </li>
+            <li className="flex items-center text-white">
+              <PencilIcon className="mr-2 w-6" />{" "}
+              <span className="font-semibold">Created at: </span>
+              <span className="custom-bg">
+                {" "}
+                {activeEmail ? `${activeEmail?.created}` : "-"}
               </span>
             </li>
           </ul>
