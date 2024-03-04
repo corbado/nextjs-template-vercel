@@ -68,6 +68,19 @@ code {
   box-shadow: rgba(0, 255, 255, 0.25) 0px 25px 150px -12px;
 }
 
+div.cb-passkey-list-card {
+  border: 2px solid white;
+}
+
+div.cb-passkey-list-header-badge {
+  border: 1px solid green;
+  color: green;
+}
+
+div.cb-passkey-list-icon {
+  color: white;
+}
+
 @media screen and (max-width: 768px) {
   .buttons {
     width: 50%;

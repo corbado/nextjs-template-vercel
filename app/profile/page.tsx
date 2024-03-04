@@ -49,6 +49,7 @@ async function CurrentUser() {
               <span className="font-semibold">Name:</span>{" "}
               <span className="custom-bg">{user.fullName}</span>
             </li>
+
             <li className="flex items-center text-white">
               <EnvelopeIcon className="mr-2 w-6" />
               <span className="font-semibold"> Email:</span>
@@ -57,8 +58,10 @@ async function CurrentUser() {
                 {activeEmail ? activeEmail?.email : "No active email"}
               </span>
             </li>
-            <li className="ml-8 flex items-center text-white">
-              <span className="font-semibold">Created at: </span>
+            <li className="flex items-center text-white">
+              <span className="pl-8 font-light" style={{ fontSize: "14px" }}>
+                Created at:{" "}
+              </span>
               <span className="custom-bg">
                 {" "}
                 {activeEmail ? `${activeEmail?.created}` : "-"}
@@ -75,8 +78,10 @@ async function CurrentUser() {
                   : "No active phone number"}
               </span>
             </li>
-            <li className="ml-8 flex items-center text-white">
-              <span className="font-semibold">Created at: </span>
+            <li className="flex items-center text-white">
+              <span className="pl-8 font-light" style={{ fontSize: "14px" }}>
+                Created at:{" "}
+              </span>
               <span className="custom-bg">
                 {" "}
                 {activePhone ? `${activePhone?.created}` : "-"}
