@@ -15,7 +15,7 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="shadow-effect my-8">
+    <div className="shadow-effect">
       <Login onLoggedIn={onLoggedIn} navigateToSignUp={navigateToSignup} />
     </div>
   );

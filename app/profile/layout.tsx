@@ -6,7 +6,7 @@ export default function ProfileLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="mt-20 flex flex-col md:flex-row md:overflow-hidden">
+    <div className="relative z-0 flex flex flex min-h-screen flex-col items-center md:flex-row md:overflow-hidden">
       <div className="w-full flex-none md:w-64">
         <SideNav />
       </div>

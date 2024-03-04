@@ -15,7 +15,7 @@ export default function SignupForm() {
   };
 
   return (
-    <div className="shadow-effect my-8">
+    <div className="shadow-effect">
       {" "}
       <SignUp onSignedUp={onSignedUp} navigateToLogin={navigateToLogin} />{" "}
     </div>
