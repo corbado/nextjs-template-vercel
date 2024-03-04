@@ -17,7 +17,10 @@ export default function SessionDetails() {
 
   return (
     <>
-      <p className="text-white">This is your shortSession:</p>
+      <p className="text-white">
+        The following data is available in your short-term session (represented
+        as JWT):
+      </p>
       <div
         className="mt-8 rounded-md bg-blue-500 p-6"
         style={{ backgroundColor: "#0C1A48" }}

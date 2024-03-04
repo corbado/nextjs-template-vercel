@@ -36,7 +36,9 @@ async function CurrentUser() {
     <>
       <h1 className="text-2xl font-bold text-white">Hi {user.fullName},</h1>
       <br></br>
-      <p style={{ color: "gray", fontSize: "16px" }}>user details:</p>
+      <p className="text-white" style={{ fontSize: "16px" }}>
+        User details:
+      </p>
       <hr className="mt-2" style={{ opacity: "20%" }}></hr>
       <div
         className="rounded-md bg-blue-500"
@@ -76,15 +78,6 @@ async function CurrentUser() {
                 {activePhone
                   ? activePhone?.phoneNumber
                   : "No active phone number"}
-              </span>
-            </li>
-            <li className="flex items-center text-white">
-              <span className="pl-8 font-light" style={{ fontSize: "14px" }}>
-                Created at:{" "}
-              </span>
-              <span className="custom-bg">
-                {" "}
-                {activePhone ? `${activePhone?.created}` : "-"}
               </span>
             </li>
           </ul>
