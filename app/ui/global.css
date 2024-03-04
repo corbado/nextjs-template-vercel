@@ -51,6 +51,8 @@ p {
 }
 pre {
   background: none !important;
+  padding: 0rem !important;
+  margin: 0rem !important;
 }
 code {
   font-family: "Inter" !important;
@@ -114,10 +116,22 @@ div.cb-dialog-content {
     font-size: 1.2rem;
     padding: 1.5rem;
   }
+  .custom-button {
+    width: 20px;
+  }
+  .custom-bg {
+    width: 65%;
+  }
   #sub-tagline {
+    font-size: 14px;
+  }
+  span {
     font-size: 14px;
   }
   #tagline {
     font-size: 32px;
+  }
+  .custom-nav {
+    margin-top: 120px;
   }
 }
