@@ -71,16 +71,13 @@ code {
 }
 
 div.cb-passkey-list-card {
-  border: 2px solid white;
+  background-color: #9cb3ce;
+  border: 0px !important;
 }
 
 div.cb-passkey-list-header-badge {
   border: 1px solid green;
   color: green;
-}
-
-div.cb-passkey-list-icon {
-  color: white;
 }
 
 div.cb-dialog-content {
