@@ -87,15 +87,6 @@ async function CurrentUser() {
                 {activePhone ? `${activePhone?.created}` : "-"}
               </span>
             </li>
-            <br></br>
-            <li className="flex items-center text-white">
-              Is Authenticated:{" "}
-              {currentSessionUser.isAuthenticated() ? (
-                <CheckCircleIcon className="w-8 pl-2 text-green-500" />
-              ) : (
-                <XCircleIcon className="w-8 pl-2 text-red-500" />
-              )}
-            </li>
           </ul>
         </div>
       </div>
