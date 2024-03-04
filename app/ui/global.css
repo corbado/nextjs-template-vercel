@@ -81,6 +81,10 @@ div.cb-passkey-list-icon {
   color: white;
 }
 
+div.cb-dialog-content {
+  color: black;
+}
+
 @media screen and (max-width: 768px) {
   .buttons {
     width: 50%;
