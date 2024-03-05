@@ -7,7 +7,5 @@ const config = new Config(projectID, apiSecret);
 const sdk = new SDK(config);
 
 export default function createNodeSDK() {
-  console.log("Project ID: ", projectID)
-  console.log("API Secret: ", apiSecret)
   return sdk
 }
