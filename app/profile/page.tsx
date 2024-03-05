@@ -37,14 +37,12 @@ async function CurrentUser() {
     <>
       <h1 className="text-2xl font-bold text-white">Hi {user.fullName},</h1>
       <br></br>
+      <br></br>
       <p className="text-white" style={{ fontSize: "16px" }}>
         User details:
       </p>
       <hr className="mt-2" style={{ opacity: "20%" }}></hr>
-      <div
-        className="rounded-md bg-blue-500"
-        style={{ backgroundColor: "transparent" }}
-      >
+      <div className="rounded-md" style={{ backgroundColor: "transparent" }}>
         <div>
           <ul className="mt-2 space-y-4">
             <li className="flex items-center text-white">
