@@ -11,7 +11,11 @@ export default function SessionDetails() {
   const serializedDecodedShortSession = JSON.stringify(
     decodedShortSession,
     null,
-    2,
+    4,
+  );
+  const formattedJsonString = serializedDecodedShortSession.replace(
+    /":/g,
+    '":   ',
   );
 
   return (
@@ -26,6 +30,7 @@ export default function SessionDetails() {
           style={{ backgroundColor: "#0C1A48" }}
         >
           <SyntaxHighlighter language="json" style={nord}>
+            {formattedJsonString}
             {serializedDecodedShortSession}
           </SyntaxHighlighter>
         </div>
