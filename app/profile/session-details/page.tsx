@@ -17,15 +17,23 @@ export default function SessionDetails() {
 
   return (
     <>
-      <h1 className="mb-0 text-2xl font-bold text-white">
+      <h1 className="custom-headline text-2xl font-bold text-white">
         The following data is available in your short-term session (represented
         as JWT):
       </h1>
-      <br></br>
-      <div className="rounded-md" style={{ backgroundColor: "#0C1A48" }}>
-        <SyntaxHighlighter language="json" style={nord}>
-          {serializedDecodedShortSession}
-        </SyntaxHighlighter>
+      <div className="mt-8 rounded-md" style={{ backgroundColor: "#0C1A48" }}>
+        <div
+          className="relative mb-3 mt-3"
+          style={{ backgroundColor: "#0C1A48" }}
+        >
+          <FaCopy
+            className="absolute right-2 top-2"
+            style={{ color: "white" }}
+          />
+          <SyntaxHighlighter language="json" style={nord}>
+            {serializedDecodedShortSession}
+          </SyntaxHighlighter>
+        </div>
       </div>
     </>
   );

@@ -84,6 +84,10 @@ div.cb-dialog-content {
   color: black;
 }
 
+.custom-align {
+  align-items: center;
+}
+
 @media screen and (max-width: 768px) {
   .buttons {
     width: 50%;
@@ -135,5 +139,20 @@ div.cb-dialog-content {
   }
   .custom-nav {
     margin-top: 80px;
+  }
+  .custom-headline {
+    padding-top: 0%;
+  }
+  .custom-align {
+    align-items: start;
+  }
+  .custom-padding {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+  .custom-headline {
+    padding-top: 10%;
   }
 }
