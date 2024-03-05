@@ -2,21 +2,164 @@
 @tailwind components;
 @tailwind utilities;
 
-input[type='number'] {
+input[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
 }
 
-input[type='number']::-webkit-inner-spin-button {
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type='number']::-webkit-outer-spin-button {
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-#landingPageContainer {
-  background: linear-gradient(111deg, #B3D9FF 0%, #DDECFD 55%, #B3D9FF 100%);
+body {
+  background: linear-gradient(111deg, #0b0d1d 0%, #0b1948 55%, #0e1837 100%);
+}
+
+#sub-tagline {
+  font-family: "Inter";
+}
+
+#tagline {
+  font-size: 48px;
+  font-family: "Space Grotesk";
+}
+
+.buttons {
+  border-radius: 1.5rem;
+  color: white;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-family: "Space Grotesk";
+}
+
+.custom-bottom {
+  padding: 3rem;
+  font-weight: 500;
+  background-color: #171b2a;
+  line-height: 2rem;
+  font-size: 1.7rem;
+  font-family: "Space Grotesk";
+}
+
+p {
+  font-size: 24px;
+}
+pre {
+  background: none !important;
+  padding: 0rem !important;
+  margin: 0rem !important;
+}
+code {
+  font-family: "Inter" !important;
+}
+.custom-bg {
+  display: block;
+  background-color: #0c1a48;
+  width: 80%;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  margin-left: auto;
+}
+
+.shadow-effect {
+  box-shadow: rgba(0, 255, 255, 0.25) 0px 25px 150px -12px;
+}
+
+div.cb-passkey-list-card {
+  background-color: #9cb3ce;
+  border: 0px !important;
+}
+
+div.cb-passkey-list-header-badge {
+  border: 1px solid green;
+  color: green;
+}
+
+div.cb-dialog-content {
+  color: black;
+}
+
+.custom-align {
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    width: 50%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 14px;
+  }
+  .custom-image {
+    width: 100px;
+    height: 100px;
+  }
+  .custom-bg-image {
+    width: 25%;
+    height: 25%;
+  }
+  .custom-main-image {
+    width: 150px;
+    height: 150px;
+  }
+  p .custom-font {
+    font-size: 12px;
+  }
+  .custom-logo {
+    width: 100px;
+    height: 100px;
+  }
+  .custom-bottom {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+  }
+  .custom-button {
+    width: 20px;
+    background-color: transparent !important;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  .custom-bg {
+    width: 59%;
+    padding: 10px 5px 10px 5px;
+    overflow: hidden;
+  }
+  #sub-tagline {
+    font-size: 14px;
+  }
+  span {
+    font-size: 14px;
+  }
+  #tagline {
+    font-size: 32px;
+  }
+  .custom-nav {
+    margin-top: 80px;
+  }
+  .custom-headline {
+    padding-top: 0%;
+  }
+  .custom-align {
+    align-items: start;
+  }
+  .custom-padding {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+  .custom-headline {
+    padding-top: 0%;
+  }
+  .custom-align {
+    align-items: start;
+    padding-top: 5rem;
+  }
+  .custom-padding {
+    margin-right: 1rem;
+  }
 }

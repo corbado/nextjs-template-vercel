@@ -2,7 +2,7 @@ import SignupForm from "./signup-form";
 
 export default function SignUpPage() {
   return (
-    <div className="my-5 mt-20 flex justify-center">
+    <div className="relative z-0 flex flex flex min-h-screen items-center justify-center">
       <SignupForm />
     </div>
   );

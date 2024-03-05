@@ -7,6 +7,7 @@ import {
   UserCircleIcon,
   EnvelopeIcon,
   PhoneIcon,
+  PencilIcon,
 } from "@heroicons/react/24/outline";
 import createNodeSDK from "@/app/utils/createNodeSDK";
 
@@ -34,35 +35,52 @@ async function CurrentUser() {
 
   return (
     <>
-      <h1 className="text-2xl font-bold">Hi {user.fullName},</h1>
-      <div className="mb-3 mt-3">
-        <p>These are your user details:</p>
-        <ul className="m-3 flex flex-col gap-3">
-          <li className="flex">
-            <EnvelopeIcon className="mr-2 w-6" /> Email:{" "}
-            {activeEmail
-              ? `${activeEmail?.email} created at ${activeEmail?.created}`
-              : "No active email"}
-          </li>
-          <li className="flex">
-            <UserCircleIcon className="mr-2 w-6" /> Name: {user.fullName}
-          </li>
-          <li className="flex">
-            <PhoneIcon className="mr-2 w-6" /> Phone Number:{" "}
-            {activePhone?.phoneNumber
-              ? `${activePhone?.phoneNumber} created at ${activePhone?.created}`
-              : "No active phone number"}
-            {activePhone?.created}
-          </li>
-          <li className="flex gap-2">
-            Is Authenticated:{" "}
-            {currentSessionUser.isAuthenticated() ? (
-              <CheckCircleIcon className="w-6" />
-            ) : (
-              <XCircleIcon className="w-6" />
-            )}
-          </li>
-        </ul>
+      <h1 className="text-2xl font-bold text-white">Hi {user.fullName},</h1>
+      <br></br>
+      <p className="text-white" style={{ fontSize: "16px" }}>
+        User details:
+      </p>
+      <hr className="mt-2" style={{ opacity: "20%" }}></hr>
+      <div
+        className="rounded-md bg-blue-500"
+        style={{ backgroundColor: "transparent" }}
+      >
+        <div>
+          <ul className="mt-2 space-y-4">
+            <li className="flex items-center text-white">
+              <UserCircleIcon className="mr-2 w-6" />
+              <span className="font-semibold">Name:</span>{" "}
+              <span className="custom-bg">{user.fullName}</span>
+            </li>
+
+            <li className="flex items-center text-white">
+              <EnvelopeIcon className="mr-2 w-6" />
+              <span className="font-semibold"> Email:</span>
+              <span className="custom-bg ">
+                {" "}
+                {activeEmail ? activeEmail?.email : "No active email"}
+              </span>
+            </li>
+            <li className="flex items-center text-white">
+              <PhoneIcon className="mr-2 w-6" />{" "}
+              <span className="font-semibold">Phone Number:</span>
+              <span className="custom-bg">
+                {" "}
+                {activePhone
+                  ? activePhone?.phoneNumber
+                  : "No active phone number"}
+              </span>
+            </li>
+            <li className="flex items-center text-white">
+              <PencilIcon className="mr-2 w-6" />{" "}
+              <span className="font-semibold">Created: </span>
+              <span className="custom-bg">
+                {" "}
+                {activeEmail ? `${activeEmail?.created}` : "-"}
+              </span>
+            </li>
+          </ul>
+        </div>
       </div>
     </>
   );
