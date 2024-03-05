@@ -21,9 +21,8 @@ export default function SessionDetails() {
         The following data is available in your short-term session (represented
         as JWT):
       </h1>
-
       <div
-        className="mt-8 rounded-md bg-blue-500 p-4"
+        className="mt-8 rounded-md bg-blue-500"
         style={{ backgroundColor: "#0C1A48" }}
       >
         <div className="relative mb-3 mt-3">
@@ -31,7 +30,6 @@ export default function SessionDetails() {
             className="absolute right-2 top-2"
             style={{ color: "white" }}
           />
-
           <SyntaxHighlighter language="json" style={nord}>
             {serializedDecodedShortSession}
           </SyntaxHighlighter>

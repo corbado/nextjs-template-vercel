@@ -85,7 +85,7 @@ div.cb-dialog-content {
 }
 
 .custom-headline {
-  padding-top: 9%;
+  padding-top: 5%;
 }
 
 @media screen and (max-width: 768px) {
@@ -124,7 +124,9 @@ div.cb-dialog-content {
     border-radius: 10px;
   }
   .custom-bg {
-    width: 65%;
+    width: 59%;
+    padding: 10px 5px 10px 5px;
+    overflow: hidden;
   }
   #sub-tagline {
     font-size: 14px;
@@ -140,5 +142,11 @@ div.cb-dialog-content {
   }
   .custom-headline {
     padding-top: 0%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+  .custom-headline {
+    padding-top: 10%;
   }
 }
