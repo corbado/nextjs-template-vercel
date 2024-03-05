@@ -73,7 +73,7 @@ async function CurrentUser() {
             </li>
             <li className="flex items-center text-white">
               <PencilIcon className="mr-2 w-6" />{" "}
-              <span className="font-semibold">Created at: </span>
+              <span className="font-semibold">Created: </span>
               <span className="custom-bg">
                 {" "}
                 {activeEmail ? `${activeEmail?.created}` : "-"}
